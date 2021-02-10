@@ -19,10 +19,10 @@ The main goal of this project was to focus on the SOLID principles.
         666 cm in
     
 ## Supported 
-###conversions
+### conversions
 * from kilograms [kg] to pounds [lb] and vice versa
 * from centimeters [cm] to inches [in] and vice versa
 
-###values
+### values
 * integers
 * doubles
