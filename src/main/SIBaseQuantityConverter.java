@@ -22,7 +22,10 @@ public abstract class SIBaseQuantityConverter implements Converter {
     }
 
     @Override
-    public double convert(String beforeConversionUnitSymbol, String afterConversionUnitSymbol, Double valueToConvert) {
+    public double convert(UnitConverterData unitConverterData) {
+        double valueToConvert = unitConverterData.getValueToConvert();
+        String beforeConversionUnitSymbol = unitConverterData.getBeforeConversionUnitSymbol();
+        String afterConversionUnitSymbol = unitConverterData.getAfterConversionUnitSymbol();
         double valueInBaseUnit = converterToSIQuantityBaseUnit.convertValueToBaseUnit(beforeConversionUnitSymbol,valueToConvert);
         DoubleUnaryOperator conversionFormula = supportedConversionsFormulas.get(afterConversionUnitSymbol);
         return conversionFormula.applyAsDouble(valueInBaseUnit);

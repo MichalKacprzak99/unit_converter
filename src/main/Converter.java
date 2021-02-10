@@ -1,7 +1,7 @@
 package main;
 
 public interface Converter {
-    double convert(String beforeConversionUnitSymbol, String afterConversionUnitSymbol, Double valueToConvert);
+    double convert(UnitConverterData unitConverterData);
     boolean checkIfConversionIsSupported(String beforeConversionUnitSymbol, String afterConversionUnitSymbol);
 
 }
