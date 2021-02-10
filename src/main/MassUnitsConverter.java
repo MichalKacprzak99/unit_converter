@@ -10,7 +10,7 @@ class ConverterToMassBaseUnit extends ConverterToSIQuantityBaseUnit {
 }
 
 
-public class MassUnitsConverter extends BaseSIQuantityConverter {
+public class MassUnitsConverter extends SIBaseQuantityConverter {
     public MassUnitsConverter(String baseUnitSymbol){
         super(baseUnitSymbol, new ConverterToMassBaseUnit(baseUnitSymbol));
         supportedConversionsFormulas.put("lb", this::convertToPounds);

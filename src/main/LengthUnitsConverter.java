@@ -15,7 +15,7 @@ class ConverterToLengthBaseUnit extends ConverterToSIQuantityBaseUnit {
 }
 
 
-public class LengthUnitsConverter extends BaseSIQuantityConverter{
+public class LengthUnitsConverter extends SIBaseQuantityConverter {
 
     public LengthUnitsConverter(String baseUnitSymbol){
         super(baseUnitSymbol, new ConverterToLengthBaseUnit(baseUnitSymbol));

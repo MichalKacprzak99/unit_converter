@@ -4,10 +4,10 @@ public class UnitConverterData {
     private final double valueToConvert;
     private final String beforeConversionUnitSymbol ;
     private final String afterConversionUnitSymbol;
-    private final BaseSIQuantityConverter converter;
+    private final SIBaseQuantityConverter converter;
 
     public UnitConverterData(double valueToConvert, String beforeConversionUnitSymbol,
-                             String afterConversionUnitSymbol, BaseSIQuantityConverter converter) {
+                             String afterConversionUnitSymbol, SIBaseQuantityConverter converter) {
         this.valueToConvert = valueToConvert;
         this.beforeConversionUnitSymbol = beforeConversionUnitSymbol;
         this.afterConversionUnitSymbol = afterConversionUnitSymbol;
@@ -26,7 +26,7 @@ public class UnitConverterData {
         return afterConversionUnitSymbol;
     }
 
-    public BaseSIQuantityConverter getConverter() {
+    public SIBaseQuantityConverter getConverter() {
         return converter;
     }
 }

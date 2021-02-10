@@ -1,10 +1,11 @@
 package main;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.function.DoubleUnaryOperator;
 
 public abstract class ConverterToSIQuantityBaseUnit implements ToBaseUnitConverter {
-    HashMap<String, DoubleUnaryOperator> conversionsFormulasToSIBaseUnit = new HashMap<>();
+    Map<String, DoubleUnaryOperator> conversionsFormulasToSIBaseUnit = new HashMap<>();
 
 
     public ConverterToSIQuantityBaseUnit(String SIBaseUnitSymbol) {
